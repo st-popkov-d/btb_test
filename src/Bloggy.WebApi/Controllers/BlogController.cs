@@ -26,6 +26,7 @@ namespace Bloggy.WebApi.Controllers
             return Ok(blogId);
         }
 
+        [AllowAnonymous]
         [HttpGet("getBlogs")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<BlogPostDto>))]
         public async Task<IActionResult> GetBlogs()
@@ -34,6 +35,7 @@ namespace Bloggy.WebApi.Controllers
             return Ok(blogs);
         }
 
+        [AllowAnonymous]
         [HttpGet("getBlog/{id:guid}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(BlogPostDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
