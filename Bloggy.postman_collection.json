@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "4f54f8ef-b072-4847-b6b7-1cc2f0ef1fdf",
+		"name": "Bloggy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33077459"
+	},
+	"item": [
+		{
+			"name": "blog",
+			"item": [
+				{
+					"name": "Get Blogs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/blog/getBlogs",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"blog",
+								"getBlogs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Blog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/blog/getBlog/8e749c5b-076a-4e5d-8017-cf73930b2f25",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"blog",
+								"getBlog",
+								"8e749c5b-076a-4e5d-8017-cf73930b2f25"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Blog",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Lorem ipsum dolor\",\r\n    \"content\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis purus sit amet volutpat. Quis eleifend quam adipiscing vitae. Tellus in metus vulputate eu scelerisque felis imperdiet. Augue mauris augue neque gravida in fermentum. Enim neque volutpat ac tincidunt vitae semper quis lectus nulla. Condimentum id venenatis a condimentum. Eleifend mi in nulla posuere. Sed viverra ipsum nunc aliquet bibendum enim facilisis. Blandit massa enim nec dui nunc mattis enim ut. Felis eget nunc lobortis mattis. Nisi scelerisque eu ultrices vitae auctor eu augue ut. Quis enim lobortis scelerisque fermentum dui faucibus. Sed sed risus pretium quam vulputate dignissim. Gravida cum sociis natoque penatibus et magnis dis. Magna etiam tempor orci eu lobortis. Mauris sit amet massa vitae tortor condimentum. Sed turpis tincidunt id aliquet risus feugiat. Facilisi etiam dignissim diam quis enim lobortis. Sed pulvinar proin gravida hendrerit lectus. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Sagittis vitae et leo duis ut diam. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Mauris nunc congue nisi vitae suscipit. Nisi vitae suscipit tellus mauris a diam maecenas. Justo donec enim diam vulputate. Cras tincidunt lobortis feugiat vivamus at augue eget. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Condimentum mattis pellentesque id nibh. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Nibh tortor id aliquet lectus proin nibh nisl condimentum. Urna condimentum mattis pellentesque id. Convallis tellus id interdum velit laoreet. Tempus quam pellentesque nec nam aliquam. Ac placerat vestibulum lectus mauris ultrices eros. Enim ut sem viverra aliquet eget. Amet porttitor eget dolor morbi. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Scelerisque viverra mauris in aliquam. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. Ultrices gravida dictum fusce ut placerat orci. Sed velit dignissim sodales ut eu sem integer vitae justo. Laoreet sit amet cursus sit. Vitae justo eget magna fermentum iaculis eu non. Vitae tempus quam pellentesque nec nam aliquam sem et. Elit sed vulputate mi sit amet mauris commodo quis. Fringilla urna porttitor rhoncus dolor purus non enim praesent. Bibendum est ultricies integer quis auctor elit sed vulputate. Id ornare arcu odio ut sem. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Et malesuada fames ac turpis egestas. Tellus cras adipiscing enim eu turpis egestas pretium aenean. Tortor consequat id porta nibh venenatis cras. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Maecenas accumsan lacus vel facilisis volutpat est velit egestas. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Pulvinar elementum integer enim neque volutpat ac tincidunt. Velit egestas dui id ornare arcu odio ut sem. Massa sapien faucibus et molestie ac feugiat sed lectus vestibulum. Lectus proin nibh nisl condimentum id venenatis a condimentum. Suspendisse sed nisi lacus sed. Tortor aliquam nulla facilisi cras. Quis commodo odio aenean sed. Sed turpis tincidunt id aliquet risus. Sem et tortor consequat id porta nibh venenatis. Facilisis gravida neque convallis a cras semper auctor. Eu sem integer vitae justo eget magna. Mattis pellentesque id nibh tortor id aliquet lectus. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Velit sed ullamcorper morbi tincidunt ornare. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Id leo in vitae turpis.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/blog/postBlog",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"blog",
+								"postBlog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Blog",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Edited: Lorem ipsum dolor\",\r\n    \"content\": \"Edited: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis purus sit amet volutpat. Quis eleifend quam adipiscing vitae. Tellus in metus vulputate eu scelerisque felis imperdiet. Augue mauris augue neque gravida in fermentum. Enim neque volutpat ac tincidunt vitae semper quis lectus nulla. Condimentum id venenatis a condimentum. Eleifend mi in nulla posuere. Sed viverra ipsum nunc aliquet bibendum enim facilisis. Blandit massa enim nec dui nunc mattis enim ut. Felis eget nunc lobortis mattis. Nisi scelerisque eu ultrices vitae auctor eu augue ut. Quis enim lobortis scelerisque fermentum dui faucibus. Sed sed risus pretium quam vulputate dignissim. Gravida cum sociis natoque penatibus et magnis dis. Magna etiam tempor orci eu lobortis. Mauris sit amet massa vitae tortor condimentum. Sed turpis tincidunt id aliquet risus feugiat. Facilisi etiam dignissim diam quis enim lobortis. Sed pulvinar proin gravida hendrerit lectus. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Sagittis vitae et leo duis ut diam. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Mauris nunc congue nisi vitae suscipit. Nisi vitae suscipit tellus mauris a diam maecenas. Justo donec enim diam vulputate. Cras tincidunt lobortis feugiat vivamus at augue eget. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Condimentum mattis pellentesque id nibh. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Nibh tortor id aliquet lectus proin nibh nisl condimentum. Urna condimentum mattis pellentesque id. Convallis tellus id interdum velit laoreet. Tempus quam pellentesque nec nam aliquam. Ac placerat vestibulum lectus mauris ultrices eros. Enim ut sem viverra aliquet eget. Amet porttitor eget dolor morbi. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Scelerisque viverra mauris in aliquam. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. Ultrices gravida dictum fusce ut placerat orci. Sed velit dignissim sodales ut eu sem integer vitae justo. Laoreet sit amet cursus sit. Vitae justo eget magna fermentum iaculis eu non. Vitae tempus quam pellentesque nec nam aliquam sem et. Elit sed vulputate mi sit amet mauris commodo quis. Fringilla urna porttitor rhoncus dolor purus non enim praesent. Bibendum est ultricies integer quis auctor elit sed vulputate. Id ornare arcu odio ut sem. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla. Et malesuada fames ac turpis egestas. Tellus cras adipiscing enim eu turpis egestas pretium aenean. Tortor consequat id porta nibh venenatis cras. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. Maecenas accumsan lacus vel facilisis volutpat est velit egestas. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Pulvinar elementum integer enim neque volutpat ac tincidunt. Velit egestas dui id ornare arcu odio ut sem. Massa sapien faucibus et molestie ac feugiat sed lectus vestibulum. Lectus proin nibh nisl condimentum id venenatis a condimentum. Suspendisse sed nisi lacus sed. Tortor aliquam nulla facilisi cras. Quis commodo odio aenean sed. Sed turpis tincidunt id aliquet risus. Sem et tortor consequat id porta nibh venenatis. Facilisis gravida neque convallis a cras semper auctor. Eu sem integer vitae justo eget magna. Mattis pellentesque id nibh tortor id aliquet lectus. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Velit sed ullamcorper morbi tincidunt ornare. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Id leo in vitae turpis.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/blog/updateBlog/7196f434-ae03-4d2c-8915-d1c02363561a",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"blog",
+								"updateBlog",
+								"7196f434-ae03-4d2c-8915-d1c02363561a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Blog",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/blog/deleteBlog/7196f434-ae03-4d2c-8915-d1c02363561a",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"blog",
+								"deleteBlog",
+								"7196f434-ae03-4d2c-8915-d1c02363561a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"Et Voila!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/blog/postComment/8e749c5b-076a-4e5d-8017-cf73930b2f25",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"blog",
+								"postComment",
+								"8e749c5b-076a-4e5d-8017-cf73930b2f25"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"Edited: Et Voila!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/blog/updateComment/05863d84-01ab-4bab-8029-e67caa374925",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"blog",
+								"updateComment",
+								"05863d84-01ab-4bab-8029-e67caa374925"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/blog/deleteComment/05863d84-01ab-4bab-8029-e67caa374925",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"blog",
+								"deleteComment",
+								"05863d84-01ab-4bab-8029-e67caa374925"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"token\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.collectionVariables.set(\"token\", jsonData.accessToken);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"alex\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/auth/login",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://localhost:7151",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
