@@ -82,17 +82,27 @@ BEGIN
 			[RecyclePaymentSchedule]
 		WHERE
 			[Payment] < @RecycleNumberOfMonthlyPayments + 12
+	),
+	CompletePaymentSchedule AS (
+		SELECT 
+			[Payment],
+			[PaymentAmount],
+			[Principal],
+			[Interest],
+			[Balance],
+			[PerAnnum]
+		FROM [PaymentSchedule]
+		UNION ALL
+		SELECT
+			[Payment],
+			[PaymentAmount],
+			[Principal],
+			[Interest],
+			[Balance],
+			[PerAnnum]
+		FROM [RecyclePaymentSchedule]
 	)
 	
-	SELECT 
-		[Payment],
-		[PaymentAmount],
-		[Principal],
-		[Interest],
-		[Balance],
-		[PerAnnum]
-	FROM [PaymentSchedule]
-	UNION ALL
 	SELECT
 		[Payment],
 		[PaymentAmount],
@@ -100,7 +110,7 @@ BEGIN
 		[Interest],
 		[Balance],
 		[PerAnnum]
-	FROM [RecyclePaymentSchedule]
+	FROM [CompletePaymentSchedule]
 END
 ";
 			migrationBuilder.Sql(sp);
